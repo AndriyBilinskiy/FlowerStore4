@@ -8,11 +8,11 @@ import ua.edu.ucu.apps.demo.payments.Payment;
 
 import java.util.List;
 
-@RequestMapping("/payment")
-@RestController
-public class FlowerController {
-    @GetMapping
-    public List<FlowerBucket> getBuckets(){
-        return List.of(new FlowerBucket());
-    }
-}
+//@RequestMapping("/payment")
+//@RestController
+//public class FlowerController {
+//    @GetMapping
+//    public List<FlowerBucket> getBuckets(){
+//        return List.of(new FlowerBucket());
+//    }
+//}
