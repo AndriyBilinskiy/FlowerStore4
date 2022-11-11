@@ -1,4 +1,4 @@
-package ua.edu.ucu.apps.demo.store;
+package ua.edu.ucu.apps.demo.flower;
 
 public class FlowerPack {
     private Flower flower;

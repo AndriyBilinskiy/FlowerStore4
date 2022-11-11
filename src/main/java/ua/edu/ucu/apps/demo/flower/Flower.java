@@ -1,9 +1,9 @@
-package ua.edu.ucu.apps.demo.store;
+package ua.edu.ucu.apps.demo.flower;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.apache.logging.log4j.message.AsynchronouslyFormattable;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,6 +14,7 @@ import javax.persistence.Table;
 @Setter
 @Entity
 @Table
+@AllArgsConstructor
 @NoArgsConstructor
 public class Flower {
     @Id
@@ -21,12 +22,9 @@ public class Flower {
     private int id;
     @Getter
     private double sepalLength;
-    private FlowerColor color;
+    private String color;
     @Getter
     private double price;
-    @Getter
-    private FlowerType flowerType;
-
     public String getColor() {
         return color.toString();
     }

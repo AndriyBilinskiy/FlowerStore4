@@ -1,6 +1,6 @@
 package ua.edu.ucu.apps.demo.delivery;
 
-import ua.edu.ucu.apps.demo.store.FlowerBucket;
+import ua.edu.ucu.apps.demo.flower.FlowerBucket;
 
 import java.util.List;
 

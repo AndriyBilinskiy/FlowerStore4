@@ -1,13 +1,11 @@
 package ua.edu.ucu.apps.demo;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import ua.edu.ucu.apps.demo.delivery.Delivery;
 import ua.edu.ucu.apps.demo.payments.Payment;
-import ua.edu.ucu.apps.demo.store.FlowerBucket;
+import ua.edu.ucu.apps.demo.flower.FlowerBucket;
 
-import java.util.LinkedList;
 import java.util.List;
 public class Order {
     @Getter
