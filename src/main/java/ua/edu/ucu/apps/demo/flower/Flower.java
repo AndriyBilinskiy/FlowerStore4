@@ -16,7 +16,7 @@ import javax.persistence.Table;
 @Table
 @AllArgsConstructor
 @NoArgsConstructor
-public class Flower {
+public class Flower extends Item{
     @Id
     @GeneratedValue
     private int id;
@@ -27,5 +27,10 @@ public class Flower {
     private double price;
     public String getColor() {
         return color.toString();
+    }
+
+    @Override
+    public String getDescription() {
+        return "Beautiful" + color + "Flower";
     }
 }

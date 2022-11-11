@@ -11,4 +11,8 @@ public class FlowerService {
     public List<Flower> getFlowers(){
         return flowerRepository.findAll();
     }
+
+    public void addFlower(Flower flower) {
+        flowerRepository.save(flower);
+    }
 }
