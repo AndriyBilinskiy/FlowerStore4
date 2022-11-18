@@ -1,9 +1,8 @@
 package ua.edu.ucu.apps.demo.appUser;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import ua.edu.ucu.apps.demo.flower.Flower;
 
 import java.util.List;
 
@@ -19,5 +18,9 @@ public class AppUserController {
     @GetMapping
     public List<AppUser> getAppUser() {
         return appUserService.getUsers();
+    }
+    @PostMapping
+    public void addAppUser(@RequestBody AppUser appUser){
+        appUserService.addUser(appUser);
     }
 }

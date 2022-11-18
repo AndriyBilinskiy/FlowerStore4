@@ -22,7 +22,7 @@ public class AppUser {
     @GeneratedValue
     private int id;
     private String email;
-    private LocalDate dob;
+    private int dob;
     private int age;
 
 }
