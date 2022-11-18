@@ -1,4 +1,4 @@
-package ua.edu.ucu.apps.demo.flower;
+package ua.edu.ucu.apps.demo.appUser;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,26 +9,20 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
+import java.time.LocalDate;
 
 @Setter
+@Getter
 @Entity
 @Table
 @AllArgsConstructor
 @NoArgsConstructor
-public class Flower extends Item{
+public class AppUser {
     @Id
     @GeneratedValue
     private int id;
-    @Getter
-    private double sepalLength;
-    @Getter
-    private String color;
-    @Getter
-    private double price;
+    private String email;
+    private LocalDate dob;
+    private int age;
 
-    @Override
-    public String getDescription() {
-        return "Beautiful" + color + "Flower";
-    }
 }
