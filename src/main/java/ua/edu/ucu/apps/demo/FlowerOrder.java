@@ -7,7 +7,7 @@ import ua.edu.ucu.apps.demo.payments.Payment;
 import ua.edu.ucu.apps.demo.flower.FlowerBucket;
 
 import java.util.List;
-public class Order {
+public class FlowerOrder {
     @Getter
     List<FlowerBucket> items;
     @Setter @Getter
