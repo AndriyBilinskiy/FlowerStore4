@@ -16,5 +16,6 @@ public class AppUserService {
 
     public void addUser(AppUser appUser) {
         appUserRepository.save(appUser);
+
     }
 }
